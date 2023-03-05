@@ -199,6 +199,6 @@ background: var(--bg);
 }
 .filter-btn:hover,
 .filter-btn:focus{
-color:#FFF;
-background: var(--pressed);
+    color:#FFF;
+    background: var(--pressed);
 }
