@@ -1,6 +1,6 @@
 *{
-margin: 0;
-padding: 0;
+/* margin: 0;
+padding: 0; */
 }
 :root{
 --primeryBrand: #4D5AE5;
@@ -41,10 +41,15 @@ body{
     color: var(--bodytext);
 }
 
+.list{
+    list-style: none;
+}
+
+
 
 
 .header-logo {
-    font-family: 'Releway' sans-serif;
+    font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
