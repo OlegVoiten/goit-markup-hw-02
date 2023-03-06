@@ -1,52 +1,60 @@
+*{
+margin: 0;
+padding: 0;
+}
 :root{
 --primeryBrand: #4D5AE5;
 --pressed: #404BBF;
 --bg: #2E2F42;
+--overlay: #2E2F42;
+--bodytext:#434455;
+--lightmode: #F4F4FD;
+--accent: #E7E9FC;
+--whitemain: #FFFFFF;
+
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background: var(--whitemain)
 }
-.list{
-list-style: none;
+
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--overlay);
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .subtitle{
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: #2E2F42;
+    letter-spacing: 0.02em;
+    color: var(--overlay);
 }
 .desc{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
-}
-.title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    color: #2E2F42;
+    letter-spacing: 0.02em;
+    color: var(--bodytext);
 }
 
-.header {}
+
 
 .header-logo {
+    font-family: 'Releway' sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #2E2F42;
+    color: var(--overlay);
 }
 .header-logo span{
     color: var(--primeryBrand);
-}
-
-.header-item {
 }
 
 .header-link {
@@ -54,7 +62,7 @@ list-style: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--overlay);
     text-decoration: none;
 }
 
@@ -62,16 +70,16 @@ list-style: none;
 .header-link:focus{
     color: var(--pressed);
 }
-
+.header-address{
+    font-style: normal;
+}
 .header-mail,
 .header-tel {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--bodytext);
     text-decoration: none;
-    list-style: none;
 }
 .header-mail:hover,
 .header-tel:hover,
@@ -81,25 +89,24 @@ list-style: none;
 }
 /* ------Hero section------ */
 .hero{
-    height: 600px;
     background: var(--bg);
     
 }
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--whitemain);
 }
 .hero-button {
     /* text */
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--whitemain);
 /* BUTTON */
     width: 169px;
     height: 56px;
@@ -116,46 +123,19 @@ background-color: var(--pressed);
 }
 
 /* section2 */
-.advantage {}
 
 .advantage-title {
 display: none;}
 
-.advantage-list {}
-
-
-.advanage-item-text {
-    
-}
-
-.advanage-item-desc {
-   
-}
-/* tehnologies */
-.tehnologies {}
-
-.tehnologies-title {}
-
-.tehnologies-list {}
-
-.list {}
-
-.tehnologies-item {}
 
 /* team */
-.team-title {}
-
-.title {}
-
-.teaam-list {}
-
-.list {}
-
-.team-item {}
-
-.subtitle {}
-
-.desc {}
+.team{
+background-color: var(--lightmode);
+}
+.team-item {
+    text-align: center;
+    background-color: var(--whitemain);
+}
 
 /* footer */
 .footer {
@@ -163,42 +143,46 @@ background: var(--bg);
 }
 
 .footer-logo {
+    font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #F4F4FD;
+    color: var(--lightmode);
+}
+.footer-logo span {
+    color: var(--primeryBrand);
 }
 
 .footer-desc {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: var(--lightmode);
 }
-.footer-logo span{
-    color: var(--primeryBrand);
-}
+
+
 /* Portfolio */
-.filter-button {}
-
-.list {}
-
+.filter h1{
+display: none;
+}
 .filter-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     color:var(--primeryBrand);
 
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--lightmode);
+    border: 1px solid var(--accent);
     border-radius: 4px;
+    cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus{
-    color:#FFF;
+    color: var(--whitemain);
     background: var(--pressed);
 }
